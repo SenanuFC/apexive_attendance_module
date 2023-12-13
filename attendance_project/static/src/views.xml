@@ -1,0 +1,7 @@
+
+<t t-inherit="hr_attendance.public_kiosk_app" t-inherit-mode="extension">
+<xpath expr="//CardLayout" position="inside">
+    All gone
+    
+</xpath>
+</t>

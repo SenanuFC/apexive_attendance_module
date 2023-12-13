@@ -1,0 +1,25 @@
+<odoo>
+  <data>
+
+
+    <record id="view_attendance_form_inherited" model="ir.ui.view">
+      <field name="name">view.attendance.form inherited</field>
+      <field name="model">hr.attendance</field>
+      <field name="inherit_id" ref="hr_attendance.hr_attendance_view_form" />
+      <field name="type">form</field>
+      <field name="mode">extension</field>
+      <field name="priority" eval="16" />
+      <field name="active" eval="True" />
+      <field name="arch" type="xml">
+
+        <xpath expr="//field[@name='employee_id']" position="after">
+          <field name="project_id" />
+          <field name="task_id" domain="[('project_id', '=', project_id)]"/>
+          <field name="activity_description" />
+        </xpath>
+
+      </field>
+    </record>
+
+  </data>
+</odoo>
