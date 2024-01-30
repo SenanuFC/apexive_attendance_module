@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data noupdate="1">
+
+        
+        <record id="project_1" model="project.project">
+            <field name="name">Project 1</field>
+        </record>
+
+        <record id="project_1_task_1" model="project.task">
+            <field name="name">Task 1</field>
+            <field name="project_id" ref="project_1"/>
+        </record>
+        
+
+        <record id="attendance_project_root1" model="hr.attendance">
+            <field
+                eval="(datetime.now()+relativedelta(months=-1, days=-1)).strftime('%Y-%m-%d 08:00:24')"
+                name="check_in" />
+            <field
+                eval="(datetime.now()+relativedelta(months=-1, days=-1)).strftime('%Y-%m-%d 12:01:33')"
+                name="check_out" />
+            <field name="project_id" ref="project_1"></field>
+            <field name="task_id" ref="project_1_task_1" />
+            <field name="employee_id" ref="hr.employee_admin" />
+        </record>
+    </data>
+</odoo>

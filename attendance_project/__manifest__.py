@@ -20,17 +20,26 @@ Write Descriptions for their activities during both check-in and check-out
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'hr_attendance', 'project'],
+    'depends': ['hr_attendance', 'project'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'data/attendance.xml'
     ],
     # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+    'assets': {
+        'hr_attendance.assets_public_attendance': [
+            # "attendance_project/static/src/js/apexive_attendance.js",
+            "attendance_project/static/src/components/project_task_form/project_task_form.js",
+            "attendance_project/static/src/components/project_task_form/project_task_form.xml",
+            "attendance_project/static/src/kiosk_extension/kiosk_extension.js",
+            # "attendance_project/static/src/kiosk_extension/kiosk_extension.xml",
+            # "attendance_project/static/src/xml/project_view_extension.xml",
+            "attendance_project/static/src/xml/views.xml",
+        ]
+    },
 }
 

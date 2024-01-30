@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    
+    <t t-name="attendance_project.project_view_extension" t-inherit="hr_attendance.public_kiosk_app" owl="1">
+        <xpath expr="//CardLayout" position="inside">
+            <t t-if="this.state.active_display === 'project'">
+                <div>Extra view</div>
+            </t>
+        </xpath>
+
+    </t>
+    
+</templates>
