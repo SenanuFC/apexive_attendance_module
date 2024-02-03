@@ -38,7 +38,7 @@ Write Descriptions for their activities during both check-in and check-out
             "attendance_project/static/src/kiosk_extension/kiosk_extension.js",
             # "attendance_project/static/src/kiosk_extension/kiosk_extension.xml",
             # "attendance_project/static/src/xml/project_view_extension.xml",
-            "attendance_project/static/src/xml/views.xml",
+            "attendance_project/static/src/xml/kiosk_app_view_extension.xml",
         ]
     },
 }

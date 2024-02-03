@@ -2,7 +2,7 @@
 
 <templates xml:space="preserve">
     
-    <t t-name="attendance_project.public_kiosk_greetings" t-inherit="hr_attendance.public_kiosk_app" t-inherit-mode="extension" owl="1">
+    <t t-name="attendance_project.public_kiosk_update" t-inherit="hr_attendance.public_kiosk_app" t-inherit-mode="extension" owl="1">
         <xpath expr="//div[hasclass('mt-5')]" position="after">
             <div>Test</div>
         </xpath>

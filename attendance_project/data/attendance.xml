@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <data noupdate="1">
+    <!-- <data noupdate="1">
 
         
         <record id="project_1" model="project.project">
@@ -25,5 +25,5 @@
             <field name="task_id" ref="project_1_task_1" />
             <field name="employee_id" ref="hr.employee_admin" />
         </record>
-    </data>
+    </data> -->
 </odoo>
