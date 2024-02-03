@@ -9,8 +9,8 @@
 
         <xpath expr="//CardLayout" position="inside">
             <t t-if="this.state.active_display === 'project'">
-                <div>Extra view</div>
-                <!-- <ProjectTaskForm/> -->
+                <!-- <div>Extra view</div> -->
+                <ProjectTaskForm employeeData="this.employeeData" kioskReturn="() => this.kioskReturn(true)" nextStep="(data) => this.nextStep(data)" token="this.props.token"/>
             </t>
         </xpath>
     </t>
